@@ -31,13 +31,12 @@ class ResultsContainer extends Component {
             <div className="container">
                 <Search
                     search={ this.state.search }
-                    results={ this.state.results }
-                    handleInputChange={ this.handleInputChange } />
+                    handleInputChange={ this.handleInputChange }
+                />
                 <ResultsTable
                     results={ this.state.results }
-                // handleInputResults={ this.handleInputResults }
-                // handleInputChange={ this.handleInputChange }
-                />
+                    search={ this.state.search }
+                    handleInputChange={ this.handleInputChange } />
             </div>
         )
     }
