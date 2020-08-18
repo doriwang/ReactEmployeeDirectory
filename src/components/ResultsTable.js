@@ -1,7 +1,6 @@
 import React from "react"
 import TableHead from "./ResultsTableHead"
-import TableBody from "./InitResultsTableBody"
-import FilteredTableBody from "./FilteredResultsTableBody"
+import TableBody from "./ResultsTableBody"
 
 const styles = {
     table: {
@@ -20,18 +19,8 @@ function ResultsTable(props) {
         return (
             <table className="table table-striped" style={ styles.table }>
                 <TableHead />
-                <FilteredTableBody
-                    data={ props.results }
-                    filtered={ filteredResults }
-                />
-            </table>
-        )
-    } else {
-        return (
-            <table className="table table-striped">
-                <TableHead />
                 <TableBody
-                    data={ props.results }
+                    filtered={ filteredResults }
                 />
             </table>
         )

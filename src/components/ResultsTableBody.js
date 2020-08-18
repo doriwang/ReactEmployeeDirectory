@@ -1,6 +1,6 @@
 import React from "react"
 
-function FilteredTableBody(props) {
+function TableBody(props) {
     return (
         <tbody>
             { props.filtered.map(employee => (
@@ -18,4 +18,5 @@ function FilteredTableBody(props) {
     )
 }
 
-export default FilteredTableBody
+export default TableBody
+
