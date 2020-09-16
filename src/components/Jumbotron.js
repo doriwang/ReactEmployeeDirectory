@@ -17,7 +17,7 @@ const styles = {
 
 function Jumbotron(props) {
     return (
-        <div className="jumbotron jumbotron-fluid" style={ styles.jumbotron }>
+        <div className="jumbotron col-lg-12 col-sm-12" style={ styles.jumbotron }>
             <div className="container" >
                 <h1 className="display-4 h1" style={ styles.h1 }>{ props.header }</h1>
                 <p className="lead">{ props.subheader }</p>

@@ -1,10 +1,11 @@
 import React from 'react';
 import Jumbotron from "./components/Jumbotron";
 import ResultsContainer from "./components/ResultsContainer"
+import "./css/style.css"
 
 function App() {
   return (
-    <div>
+    <div className="row">
       <Jumbotron header="Employee Directory" subheader="Type an employee's name to search" />
       <ResultsContainer />
     </div>

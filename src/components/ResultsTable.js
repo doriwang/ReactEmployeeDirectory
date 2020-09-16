@@ -17,12 +17,14 @@ function ResultsTable(props) {
 
     if (props.handleInputChange) {
         return (
-            <table className="table table-striped" style={ styles.table }>
-                <TableHead />
-                <TableBody
-                    filtered={ filteredResults }
-                />
-            </table>
+            <div className="col-sm-12">
+                <table className="table table-striped table-responsive-sm" style={ styles.table }>
+                    <TableHead />
+                    <TableBody
+                        filtered={ filteredResults }
+                    />
+                </table>
+            </div>
         )
     }
 }

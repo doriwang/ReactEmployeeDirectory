@@ -29,14 +29,16 @@ class ResultsContainer extends Component {
     render() {
         return (
             <div className="container">
-                <Search
-                    search={ this.state.search }
-                    handleInputChange={ this.handleInputChange }
-                />
-                <ResultsTable
-                    results={ this.state.results }
-                    search={ this.state.search }
-                    handleInputChange={ this.handleInputChange } />
+                <div className="row">
+                    <Search
+                        search={ this.state.search }
+                        handleInputChange={ this.handleInputChange }
+                    />
+                    <ResultsTable
+                        results={ this.state.results }
+                        search={ this.state.search }
+                        handleInputChange={ this.handleInputChange } />
+                </div >
             </div>
         )
     }
